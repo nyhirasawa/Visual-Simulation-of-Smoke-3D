@@ -1,0 +1,2 @@
+smoke_simulation: main.cpp grid.cpp initialize_grid.cpp utils.cpp draw_substance_density.cpp update_fluid_velocity.cpp linear_solver.cpp sparse_matrix.cpp move_substances.cpp write_substance_density_data.cpp
+	clang++ main.cpp grid.cpp initialize_grid.cpp utils.cpp draw_substance_density.cpp update_fluid_velocity.cpp linear_solver.cpp sparse_matrix.cpp move_substances.cpp write_substance_density_data.cpp `pkg-config --cflags --libs opencv4` -std=c++17 -O3
